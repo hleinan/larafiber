@@ -1,0 +1,120 @@
+body {
+    background: #fafafa;
+    font-family: 'Raleway', sans-serif;
+    color: #3A2F25;
+}
+
+h1, h2, h3, h4, h5, h6, .serif {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bg-image {
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+.bg-pink-brand {
+    background: #D9667B
+}
+
+.bg-apri-brand {
+    background: #F2AB91
+}
+.bg-apri-light-brand {
+    background: #faefea
+}
+
+.bg-blue-brand {
+    background: #307f91
+}
+
+.text-blue-500 {
+    color: #3791A6
+}
+
+.bg-light-blue-brand {
+    background: #B6E7F2
+}
+.bg-2light-blue-brand {
+    background: #ddf0f2
+}
+
+.bg-brown-brand {
+    background: #3A2F25
+}
+
+.bg-light-brown-brand {
+    background: #736558
+}
+
+.editor-body p, .editor-body h2, .editor-body h3, .editor-body h4 {
+    margin-bottom: 1rem;
+}
+
+.editor-body h1 {
+    font-size: 1.875rem;
+}
+
+.editor-body h2 {
+    font-size: 1.5rem;
+}
+
+.editor-body h3 {
+    font-size: 1.25rem;
+}
+
+.editor-body br {
+    margin-bottom: 2rem;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    display: inline;
+}
+
+.green-dot {
+    width: 6px;
+    height: 6px;
+    margin-left: -10px;
+    margin-bottom: 12px;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+
+.editor a{
+    color: #4299e1
+}
+
+.editor ul{
+    list-style: disc;
+}
+
+.toggle-checkbox:checked {
+    @apply: right-0 border-green-400;
+    right: 0;
+    border-color: #68D391;
+}
+.toggle-checkbox:focus {
+    outline: none;
+}
+.toggle-checkbox:checked + .toggle-label {
+    @apply: bg-green-400;
+    background-color: #68D391;
+}
+
+.content-box br {
+    display: block;
+    content: "";
+    margin-top: 15px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
