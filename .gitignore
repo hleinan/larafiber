@@ -16,4 +16,3 @@ database/backup/*
 database/db.sqlite
 database/session.sqlite
 Caddyfile
-database/session.sqlite
