@@ -18,3 +18,19 @@ Init and run the backend:
 ```go get```
 
 ```go run main.go```
+
+## Create an .env file
+
+```
+template_path=./views/
+db_path=./database/db.sqlite
+sparkpost=
+domain=http://localhost:4000/
+app_env=local
+port=4000
+jwt_token=
+AWS_REGION=
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_BUCKET=
+```
