@@ -34,3 +34,28 @@ AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
 AWS_BUCKET=
 ```
+
+## Creating new models
+
+All the models are located under the app-folder. There is a base file that contains a BASE struct. This is the base for all models, since it holds both ID and UUID. UUID is used in frontend, so we don´t have to expose the ID.
+
+To add the model to GORM, simply add it to the auto migrate definition in the init function, and GORM will greate the database schema:
+
+```
+db.Debug().AutoMigrate(
+    &ForgottenPassword{},
+    &User{},
+    &Account{},
+    &Version{},
+    &Task{},
+)
+```
+
+## How it all comes together
+
+When a request is sent to the server, the following happens:
+* The router file is invoced (routes/web.go), where the matching path and method are located.
+* If there are any middelware hoocked up, this will be invoced from routes/web.go
+* When a route is matched, and controller function is called.
+* The inertia.Render function is called, with the data and the name of the vue file.
+* Inertia.js on the frontend is called with the data and the vue file (plus version and path, but that is described on Inertia.js´ own web page), and rendered based on the vue files. 
